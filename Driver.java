@@ -65,7 +65,7 @@ public class Driver {
                     }
                     break;
                 case 4:
-                    //new Driver();
+                    new Driver();
                 case 5:
                     System.exit(0);    
                 case 6:
