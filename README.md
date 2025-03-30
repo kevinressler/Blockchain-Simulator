@@ -15,7 +15,7 @@ This is a simple blockchain simulator built in Java. It shows the core mechanics
 - A demo runner that processes 100 transactions (difficulty 3), displaying each transaction in the terminal
 
 ## Manual Driver:
-The manual dirver is an interactive command line interface that allows users to interact with the blockchain.
+The manual driver is an interactive command line interface that allows users to interact with the blockchain.
 - Sending money
 - Creating wallets
 - Viewing user Wallets
