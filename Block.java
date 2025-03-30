@@ -26,7 +26,6 @@ public class Block {
         
     }
 
-    
     public String computeHash() throws NoSuchAlgorithmException {
         String input = index + Long.toString(timestamp) + data + previousHash + nonce;
         
@@ -92,8 +91,7 @@ public class Block {
         sb.append("╚═══════════════════════════════════════════════════════════════════════════════╝\n");
         return sb.toString();
     }
-
-
+    
 }
 
 

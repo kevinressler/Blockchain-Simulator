@@ -72,6 +72,7 @@ public class BlockChain {
             Miner newMiner = new Miner(minerNames.remove(0));
             miners[i] = newMiner;
         }
+        
     }
 
     public boolean checkUser(String name) {

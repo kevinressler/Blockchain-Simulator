@@ -11,7 +11,6 @@ public class Demo {
         // Initializes the blockchian with the difficulty and number of miners
         BlockChain bc = new BlockChain(2,5);
 
-
         // creates up to 26 users each with a unique name and 10000-20000 coins
         bc.createUsers(10);
 
@@ -22,7 +21,6 @@ public class Demo {
 
             Thread.sleep(1000);
         }
-        
         
         // displays the blockchain after the transactions have been completed
         bc.showBlockChain();

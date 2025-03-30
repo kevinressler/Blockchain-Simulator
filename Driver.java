@@ -22,8 +22,6 @@ public class Driver {
         BlockChain theChain = new BlockChain(difficulty, 10);
 
         System.out.println("Blockchain settings confirmed");
-
-        
         
         while (true) {
 
