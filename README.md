@@ -1,6 +1,6 @@
 ## Java Blockchain Simulator
 
-This is a simple blockchain simulator built in Java. It shows the core mechanics of a blockchain including, block mining, transaction tracking, and rewards to miners. This uses the SHA-256 hashing algorithm (same as Bitcoin). It allows you to adjust the difficulty of mining for each transaction. 
+This is a simple blockchain simulator built in Java. It shows the core mechanics of a blockchain including, block mining, transaction tracking, and rewards to miners. This uses the SHA-256 hashing algorithm (same as Bitcoin). It allows you to adjust the difficulty of mining. 
 
 ## Features
 - Each block contains a single valid transaction
