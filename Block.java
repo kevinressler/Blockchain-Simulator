@@ -16,16 +16,17 @@ public class Block {
 
     public Block(int index, User sender, User receiver, String data, String previousHash) throws NoSuchAlgorithmException {
         this.index = index;
+        this.timestamp = Instant.now().getEpochSecond();
+        this.data = data;
+        this.previousHash = previousHash;
+        this.nonce = 0;
         this.sender = sender;
         this.receiver = receiver;
         this.hash = computeHash();
-        this.previousHash = previousHash;
-        this.timestamp = Instant.now().getEpochSecond();
-        this.nonce = 0;
-        this.data = data;
-
+        
     }
 
+    
     public String computeHash() throws NoSuchAlgorithmException {
         String input = index + Long.toString(timestamp) + data + previousHash + nonce;
         
@@ -63,10 +64,11 @@ public class Block {
             for(int i = 0; i < difficulty; i++) {
                 hashString = hashString + hash.charAt(i);
             }
+
             if (targetPrefix.equals(hashString)) {
                 isFound = true;
-                System.out.println("Winning Hash: " + this.hash);
-                System.out.println("Winning Nonse: " + nonce);
+                System.out.println("\nWinning Hash: " + this.hash);
+                System.out.println("\nWinning Nonce: " + nonce);
             }
             else {
                 System.out.println(this.hash);
@@ -77,14 +79,21 @@ public class Block {
         return counter;
     }
     
-    
-    // public String toString() {
-    //     StringBuilder sb = new StringBuilder();
-    //     sb.append("Block #").append(index);
-    //     sb.append("\nData: ").append(data);
-    //     sb.append("\nTimestamp: ").append(timestamp);
-    //     return sb.toString();
-    // }
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("╔═══════════════════════════════════════════════════════════════════════════════╗\n");
+        sb.append(String.format("║ Block #%d\n", index));
+        sb.append("║-------------------------------------------------------------------------------║\n");
+        sb.append(String.format("║ Transaction: %-64s ║\n", data));
+        sb.append(String.format("║ Timestamp:   %-64s ║\n", timestamp));
+        sb.append(String.format("║ Nonce:       %-64s ║\n", nonce));
+        sb.append(String.format("║ Prev Hash:   %-64s ║\n", previousHash));
+        sb.append(String.format("║ Hash:        %-64s ║\n", hash));
+        sb.append("╚═══════════════════════════════════════════════════════════════════════════════╝\n");
+        return sb.toString();
+    }
+
+
 }
 
 
