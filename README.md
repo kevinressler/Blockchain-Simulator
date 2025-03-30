@@ -4,7 +4,7 @@ This is a simple blockchain simulator built in Java. It shows the core mechanics
 
 ## Features
 - Each block contains a single valid transaction
-- Blocks are mined using proof-of-work with adjustable difficulty (leading zeros in the hash)
+- Blocks are mined using *proof-of-work* with adjustable difficulty (leading zeros in the hash)
 - Miners receive a reward for successfully mining a block
 - Uses the SHA-256 hashing algorithm to create a 256 character hash
 - Stores all user information (name, address, balance) in a hashmap
