@@ -25,7 +25,7 @@ The manual dirver is an interactive command line interface that allows users to 
 
 On startup, users choose a mining difficulty. This is the number of leading zeros required in the hash for a block to be considered valid. A higher difficulty takes more computing power but takes longer. Then, the user can select from options that depend on the desired operations.
 
-Demo 
+## Demo 
 This simulates 100 transactions between 10 users at a difficulty of 5. Users are given an amount of 10000-20000, and each transaction is 1-100 coins. Five miners are created who compete to find the nonce and successfully mine the block. The output in the terminal shows the transaction progress. After 100 complete transactions, it displays the blockchain, miners, and users.
 
 ## Future Improvements
