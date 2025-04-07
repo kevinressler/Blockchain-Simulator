@@ -29,9 +29,9 @@ On startup, users choose a mining difficulty. This is the number of leading zero
 This simulates 100 transactions between 10 users at a difficulty of 5. Users are given an amount of 10000-20000, and each transaction is 1-100 coins. Five miners are created who compete to find the nonce and successfully mine the block. The output in the terminal shows the transaction progress. After 100 complete transactions, it displays the blockchain, miners, and users.
 
 ## Future Improvements
-Add a feature to read and write transaction data from/to a file to load/store blockchain data
-Allow multiple transactions to fit inside of one block
-Add a non-local network system for multiple users at once
+- Add a feature to read and write transaction data from/to a file to load/store blockchain data
+- Allow multiple transactions to fit inside of one block
+- Add a non-local network system for multiple users at once
 
 ## License
 MIT License
